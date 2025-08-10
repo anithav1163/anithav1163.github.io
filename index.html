@@ -1,165 +1,177 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anitha Valluru | Data Analytics & Machine Learning</title>
 <style>
-    /* ===== Color Palette ===== */
-    :root {
-        --bg: #ffffff;
-        --primary: #1A73E8;
-        --accent: #34A853;
-        --text: #212121;
-        --highlight: #F9AB00;
-    }
+/* ===== Color Palette ===== */
+:root {
+  --bg: #ffffff;
+  --primary: #1A73E8;
+  --accent: #34A853;
+  --text: #121212;
+  --highlight: #F9AB00;
+}
 
-    body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background: var(--bg);
-        color: var(--text);
-    }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
 
-    header {
-        text-align: center;
-        padding: 50px 20px;
-        background: linear-gradient(135deg, var(--primary), var(--accent));
-        color: white;
-        animation: fadeIn 1.5s ease-in-out;
-    }
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  animation: fadeIn 1.5s ease-in-out;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
-    }
+/* ===== Section Titles ===== */
+h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-top: 40px;
+}
 
-    header p {
-        margin-top: 10px;
-        font-size: 1.2em;
-    }
+/* ===== Skills Section ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+}
+.skill {
+  background: var(--highlight);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  animation: slideUp 1s ease-in-out;
+}
 
-    /* ===== Section Titles ===== */
-    h2 {
-        text-align: center;
-        color: var(--primary);
-        margin-top: 40px;
-    }
+/* ===== Project Cards ===== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
 
-    /* ===== Skills Section ===== */
-    .skills {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-        gap: 15px;
-    }
+/* ===== Contact Section ===== */
+.contact {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .skill {
-        background: var(--highlight);
-        padding: 10px 20px;
-        border-radius: 20px;
-        font-weight: bold;
-        animation: slideUp 1s ease-in-out;
-    }
-
-    /* ===== Project Cards ===== */
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .card {
-        background: white;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        padding: 20px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    }
-
-    .card h3 {
-        color: var(--primary);
-    }
-
-    /* ===== Contact Section ===== */
-    .contact {
-        background: var(--primary);
-        color: white;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .contact a {
-        color: var(--highlight);
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    /* ===== Animations ===== */
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-        from { transform: translateY(20px); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
-    }
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 </style>
 </head>
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
-    <h1>Anitha Valluru</h1>
-    <p>Data Analytics & Machine Learning | Python · SQL · Power BI</p>
+  <h1>Anitha Valluru</h1>
+  <p>Data Analytics & Machine Learning | Python · SQL · Power BI</p>
 </header>
 
-<section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Jupyter Notebook</div>
-        <div class="skill">Scikit-learn</div>
-        <div class="skill">TensorFlow</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">Tableau</div>
-        <div class="skill">Excel</div>
-    </div>
-</section>
+<!-- ===== SKILLS ===== -->
+<h2>Skills</h2>
+<div class="skills">
+  <div class="skill">Python</div>
+  <div class="skill">SQL</div>
+  <div class="skill">Jupyter Notebook</div>
+  <div class="skill">Scikit-learn</div>
+  <div class="skill">TensorFlow</div>
+  <div class="skill">Power BI</div>
+  <div class="skill">Tableau</div>
+  <div class="skill">Excel</div>
+  <div class="skill">Critical Thinking</div>
+  <div class="skill">Communication</div>
+</div>
 
-<section>
-    <h2>Projects</h2>
-    <div class="projects">
-        <div class="card">
-            <h3>Iris Classifier</h3>
-            <p>Built a web app using Python, TensorFlow, and Flask to classify iris species with Seaborn visualizations.</p>
-        </div>
-        <div class="card">
-            <h3>House Price Prediction</h3>
-            <p>Developed a Ridge Regression model in Python & Pandas to predict house prices. Basic HTML/CSS UI.</p>
-        </div>
-        <div class="card">
-            <h3>Blockchain Security System</h3>
-            <p>Django-based web app with AI-driven rules for secure access control using blockchain concepts.</p>
-        </div>
-    </div>
-</section>
+<!-- ===== PROJECTS ===== -->
+<h2>Projects</h2>
+<div class="projects">
+  <div class="card">
+    <h3>Iris Classifier</h3>
+    <p>Built a web app with Python, TensorFlow & Flask to classify iris species. Visualized results with Seaborn.</p>
+  </div>
+  <div class="card">
+    <h3>House Price Prediction</h3>
+    <p>Developed Ridge Regression model with Python & Pandas to predict housing prices. Added basic front-end.</p>
+  </div>
+  <div class="card">
+    <h3>Blockchain Security System</h3>
+    <p>Django web app with AI-driven rules for access control & blockchain-based data security.</p>
+  </div>
+</div>
 
-<section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:anithavalluru2@gmail.com">anithavalluru2@gmail.com</a></p>
-    <p>Phone: <a href="tel:7382465293">7382465293</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/anitha-valluru-1b1384287" target="_blank">View Profile</a></p>
-</section>
+<!-- ===== INTERNSHIPS ===== -->
+<h2>Internship Experience</h2>
+<div class="projects">
+  <div class="card">
+    <h3>Python Full Stack Intern</h3>
+    <p>Worked on vehicle model recognition for transport systems (traffic monitoring, toll collection, etc.).</p>
+  </div>
+  <div class="card">
+    <h3>Data Science Intern</h3>
+    <p>Processed complex datasets using advanced querying, visualization & analytics tools.</p>
+  </div>
+  <div class="card">
+    <h3>Prompt Engineering Intern</h3>
+    <p>Designed and optimized prompts for generative AI models like ChatGPT, Claude & Gemini.</p>
+  </div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<div class="contact">
+  <p>📧 Email: <a href="mailto:anithavalluru2@gmail.com">anithavalluru2@gmail.com</a></p>
+  <p>🔗 <a href="https://linkedin.com/in/anitha-valluru-1b1384287" target="_blank">LinkedIn</a></p>
+  <p>📱 Phone: 7382465293</p>
+</div>
 
 </body>
 </html>
-
+    
