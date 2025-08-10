@@ -1,177 +1,183 @@
-    <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anitha Valluru | Data Analytics & Machine Learning</title>
-<style>
-/* ===== Color Palette ===== */
-:root {
-  --bg: #ffffff;
-  --primary: #1A73E8;
-  --accent: #34A853;
-  --text: #121212;
-  --highlight: #F9AB00;
-}
-
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-}
-
-/* ===== Header ===== */
-header {
-  text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: white;
-  animation: fadeIn 1.5s ease-in-out;
-}
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-header p {
-  margin-top: 10px;
-  font-size: 1.2em;
-}
-
-/* ===== Section Titles ===== */
-h2 {
-  text-align: center;
-  color: var(--primary);
-  margin-top: 40px;
-}
-
-/* ===== Skills Section ===== */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  gap: 15px;
-}
-.skill {
-  background: var(--highlight);
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-weight: bold;
-  animation: slideUp 1s ease-in-out;
-}
-
-/* ===== Project Cards ===== */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-.card {
-  background: white;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-.card h3 {
-  margin-top: 0;
-  color: var(--primary);
-}
-
-/* ===== Contact Section ===== */
-.contact {
-  background: var(--primary);
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-.contact a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* ===== Animations ===== */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anitha Valluru — Data Scientist & ML Engineer</title>
+  <meta name="description" content="Portfolio of Anitha Valluru — Python, SQL, Power BI, Machine Learning."/>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <h1>Anitha Valluru</h1>
+        <p class="muted">Data Science · Machine Learning · Full‑Stack</p>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menu-btn" aria-label="menu">☰</button>
+    </div>
+  </header>
 
-<!-- ===== HEADER ===== -->
-<header>
-  <h1>Anitha Valluru</h1>
-  <p>Data Analytics & Machine Learning | Python · SQL · Power BI</p>
-</header>
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Hi — I’m <span class="accent">Anitha</span></h2>
+          <p class="lead">A Computer Science graduate who turns data into actionable insights using <strong>Python, SQL, Power BI</strong> and modern ML tools.</p>
+          <p class="cta">
+            <a class="btn" href="#projects">View my projects</a>
+            <a class="btn btn-ghost" href="mailto:anithavalluru2@gmail.com">Contact me</a>
+          </p>
+          <p class="small-muted">Available for internships & entry-level roles in Data Science / ML / Full Stack.</p>
+        </div>
+        <div class="hero-card">
+          <div class="avatar-placeholder">Upload your photo.jpg to /assets/profile.jpg</div>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> anithavalluru2@gmail.com</li>
+            <li><strong>Phone:</strong> 7382465293</li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/anitha-valluru-1b1384287" target="_blank">linkedin.com/in/anitha-valluru-1b1384287</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<!-- ===== SKILLS ===== -->
-<h2>Skills</h2>
-<div class="skills">
-  <div class="skill">Python</div>
-  <div class="skill">SQL</div>
-  <div class="skill">Jupyter Notebook</div>
-  <div class="skill">Scikit-learn</div>
-  <div class="skill">TensorFlow</div>
-  <div class="skill">Power BI</div>
-  <div class="skill">Tableau</div>
-  <div class="skill">Excel</div>
-  <div class="skill">Critical Thinking</div>
-  <div class="skill">Communication</div>
-</div>
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About Me</h3>
+        <p>I graduated with a B.Tech in Computer Science (JNTU Kakinada, 2024). I enjoy building machine learning models, data visualizations, and small web apps that make data useful for stakeholders.</p>
+      </div>
+    </section>
 
-<!-- ===== PROJECTS ===== -->
-<h2>Projects</h2>
-<div class="projects">
-  <div class="card">
-    <h3>Iris Classifier</h3>
-    <p>Built a web app with Python, TensorFlow & Flask to classify iris species. Visualized results with Seaborn.</p>
-  </div>
-  <div class="card">
-    <h3>House Price Prediction</h3>
-    <p>Developed Ridge Regression model with Python & Pandas to predict housing prices. Added basic front-end.</p>
-  </div>
-  <div class="card">
-    <h3>Blockchain Security System</h3>
-    <p>Django web app with AI-driven rules for access control & blockchain-based data security.</p>
-  </div>
-</div>
+    <section id="skills" class="section band">
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>Programming & Tools</h4>
+            <p>Python · SQL · Jupyter Notebook · Git</p>
+          </div>
+          <div class="skill-card">
+            <h4>Machine Learning</h4>
+            <p>Scikit‑learn · TensorFlow · Model evaluation</p>
+          </div>
+          <div class="skill-card">
+            <h4>Visualization & BI</h4>
+            <p>Power BI · Tableau · Excel · Seaborn</p>
+          </div>
+          <div class="skill-card">
+            <h4>Soft Skills</h4>
+            <p>Communication · Critical Thinking · Adaptability · Quick Learner</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- ===== INTERNSHIPS ===== -->
-<h2>Internship Experience</h2>
-<div class="projects">
-  <div class="card">
-    <h3>Python Full Stack Intern</h3>
-    <p>Worked on vehicle model recognition for transport systems (traffic monitoring, toll collection, etc.).</p>
-  </div>
-  <div class="card">
-    <h3>Data Science Intern</h3>
-    <p>Processed complex datasets using advanced querying, visualization & analytics tools.</p>
-  </div>
-  <div class="card">
-    <h3>Prompt Engineering Intern</h3>
-    <p>Designed and optimized prompts for generative AI models like ChatGPT, Claude & Gemini.</p>
-  </div>
-</div>
+    <section id="projects" class="section">
+      <div class="container">
+        <h3>Projects</h3>
 
-<!-- ===== CONTACT ===== -->
-<div class="contact">
-  <p>📧 Email: <a href="mailto:anithavalluru2@gmail.com">anithavalluru2@gmail.com</a></p>
-  <p>🔗 <a href="https://linkedin.com/in/anitha-valluru-1b1384287" target="_blank">LinkedIn</a></p>
-  <p>📱 Phone: 7382465293</p>
-</div>
+        <div class="project">
+          <div class="project-meta">
+            <h4>Iris Classifier</h4>
+            <p class="muted">Aug 2024 – Oct 2024</p>
+            <p>Built a web app using <strong>Python, TensorFlow, Flask</strong> to classify iris species. Visualizations with Seaborn.</p>
+            <p class="tech">Tech: Python · TensorFlow · Flask · Seaborn</p>
+            <p class="proj-links"><a href="#" class="btn btn-sm" aria-disabled="true">GitHub</a> <a href="#" class="btn btn-sm btn-ghost" aria-disabled="true">Live Demo</a></p>
+          </div>
+        </div>
 
+        <div class="project">
+          <div class="project-meta">
+            <h4>House Price Prediction</h4>
+            <p class="muted">Aug 2024 – Oct 2024</p>
+            <p>Developed a Ridge Regression model with Python and Pandas to predict housing prices. Basic front-end with HTML & CSS.</p>
+            <p class="tech">Tech: Python · Pandas · Scikit‑learn · HTML/CSS</p>
+            <p class="proj-links"><a href="#" class="btn btn-sm" aria-disabled="true">GitHub</a></p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-meta">
+            <h4>Blockchain Security System</h4>
+            <p class="muted">Feb 2024 – May 2024</p>
+            <p>Built a Django-based app using blockchain concepts and AI-driven rules for access control and data security.</p>
+            <p class="tech">Tech: Django · Python · Blockchain concepts · AI</p>
+            <p class="proj-links"><a href="#" class="btn btn-sm" aria-disabled="true">GitHub</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience" class="section band">
+      <div class="container">
+        <h3>Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Generative AI & Prompt Engineering Intern</h4>
+            <p class="muted">Mar 2025 – Jul 2025</p>
+            <p>Designed and optimized prompts for generative models (ChatGPT, Claude, Gemini).</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Python Full Stack Intern</h4>
+            <p class="muted">May 2023 – Jul 2023</p>
+            <p>Worked on vehicle model recognition for intelligent transport systems (traffic monitoring, toll collection, parking management).</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Data Science Intern</h4>
+            <p class="muted">Mar 2023 – May 2023</p>
+            <p>Data analysis, visualization, and advanced querying.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Python with Machine Learning Intern</h4>
+            <p class="muted">Sep 2022 – Nov 2022</p>
+            <p>Compared ML algorithms and ANNs for transient groundwater level prediction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="container">
+        <h3>Certificates</h3>
+        <ul class="cert-list">
+          <li>Introduction to Microsoft Excel</li>
+          <li>Gen AI Learnathon</li>
+          <li>AWS Cloud Practitioner Essentials</li>
+          <li>Data Science and Analytics</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="section band">
+      <div class="container">
+        <h3>Education</h3>
+        <p><strong>B.Tech – Computer Science & Engineering</strong>, Jawaharlal Nehru Technological University, Kakinada (2020–2024)</p>
+        <p>CGPA: 7.65 / 10</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>If you'd like to get in touch: <a href="mailto:anithavalluru2@gmail.com">anithavalluru2@gmail.com</a></p>
+        <p>Or add my portfolio link to your resume: <code>https://anithavalluru.github.io</code></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Anitha Valluru · Built with ❤️ · <a href="#">GitHub</a></p>
+    </div>
+  </footer>
 </body>
 </html>
-    
